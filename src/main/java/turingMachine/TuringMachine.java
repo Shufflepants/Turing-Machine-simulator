@@ -492,7 +492,7 @@ public class TuringMachine {
 		PrintWriter write = new PrintWriter(filename);
 		
 		// Store all vertices of the machine
-		Vertex<State, Transition> statesV[] = turing.vertices_array();
+		Vertex<State, Transition>[] statesV = turing.vertices_array();
 		
 		write.println(String.format("prefix = %c", vertexPrefix));
 		write.println(String.format("states = %d", turing.vertices().size()));
